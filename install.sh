@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Install Nerd Fonts
-__ScriptVersion="0.7"
+__ScriptVersion="0.8"
 
 # Default values for option variables:
 quiet=false
@@ -15,7 +15,7 @@ installpath="user"
 usage() {
   cat << EOF
 Usage: ./install.sh [-q -v -h] [[--copy | --link] --clean | --list | --remove]
-                    [--use-single-width-glyphs] [--windows] [--otf | --ttf]
+                    [--mono] [--windows] [--otf | --ttf]
                     [--install-to-user-path | --install-to-system-path ]
                     [FONT...]
 
@@ -36,7 +36,7 @@ General options:
                                 with this script).
                                 Can be combined with -L for a dry run.
 
-  -s, --use-single-width-glyphs Install single-width glyphs variants.
+  -s, --mono                    Install single-width glyphs variants.
   -p, --use-proportional-glyphs Install proportional glyphs variants.
 
   -U, --install-to-user-path    Install fonts to users home font path [default].
@@ -87,7 +87,7 @@ while getopts "$optspec" optchar; do
               [ "$mode" != "remove" ] && mode="list";;
         remove) mode="remove";;
         clean) clean=true;;
-        use-single-width-glyphs) variant="M";;
+        mono) variant="M";;
         use-proportional-glyphs) variant="P";;
         otf) extension="otf";;
         ttf) extension="ttf";;

@@ -387,8 +387,7 @@ positional arguments:
 options:
   -h, --help            show this help message and exit
   -v, --version         show program's version number and exit
-  -s, --mono, --use-single-width-glyphs
-                        Whether to generate the glyphs as single-width not double-width (default is double-width)
+  -s, --mono            Whether to generate the glyphs as single-width not double-width (default is double-width)
   -l, --adjust-line-height
                         Whether to adjust line heights (attempt to center powerline separators more evenly)
   -q, --quiet, --shutup
@@ -442,7 +441,7 @@ Symbol Fonts:
 
     ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf
     ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf -s -q
-    ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --use-single-width-glyphs --quiet
+    ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --mono --quiet
     ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf -w
     ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --windows --quiet
     ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --windows --pomicons --quiet

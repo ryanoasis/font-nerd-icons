@@ -482,8 +482,7 @@ positional arguments:
 options:
   -h, --help            show this help message and exit
   -v, --version         show program's version number and exit
-  -s, --mono, --use-single-width-glyphs
-                        Whether to generate the glyphs as single-width not double-width (default is double-width) (Nerd Font Mono)
+  -s, --mono            Whether to generate the glyphs as single-width not double-width (default is double-width) (Nerd Font Mono)
   --variable-width-glyphs
                         Do not adjust advance width (no "overhang") (Nerd Font Propo)
   --debug [{0,1,2,3}]   Verbose mode (optional: 1=just to file; 2*=just to terminal; 3=display and file)
@@ -538,7 +537,7 @@ Expert Options:
 ```
 ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf
 ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf -s -q
-./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --use-single-width-glyphs --quiet
+./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --mono --quiet
 
 ./font-patcher Inconsolata.otf --fontawesome
 ./font-patcher Inconsolata.otf --fontawesome --octicons --pomicons

@@ -378,8 +378,7 @@ argumentos posicionales:
 argumentos opcionales:
   -h, --help            muestra este mensaje de ayuda y sale
   -v, --version         muestra la versión del programa y sale
-  -s, --mono, --use-single-width-glyphs
-                        Indica si genera los glifos como ancho simple, no doble (por defecto es ancho doble)
+  -s, --mono            Indica si genera los glifos como ancho simple, no doble (por defecto es ancho doble)
   -l, --adjust-line-height
                         Indica si se ajustan las alturas de línea (para intentar centrar los separadores de powerline más parejo)
   -q, --quiet, --shutup
@@ -434,7 +433,7 @@ Symbol Fonts:
 ```
 ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf
 ./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf -s -q
-./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --use-single-width-glyphs --quiet
+./font-patcher Droid\ Sans\ Mono\ for\ Powerline.otf --mono --quiet
 
 ./font-patcher Inconsolata.otf --fontawesome
 ./font-patcher Inconsolata.otf --fontawesome --octicons --pomicons
