@@ -1841,6 +1841,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "skoch13",
+      "name": "Sergey Kochetkov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/29177689?v=4",
+      "profile": "https://github.com/skoch13",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "repoType": "github",
