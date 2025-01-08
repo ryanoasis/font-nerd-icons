@@ -88,7 +88,7 @@ while read -r filename; do
         (cd "$path" && tar rf "$outputdir/$basename.tar" --no-recursion "$file")
     done < <(find "${searchdir}" -type f -exec bash -c 'printf "%s\000" "{}" | sed "s!\(.*\)/!\1|!"' \; | sort -z -u '-t|' -k2,2 | sort -z)
 
-    if [ $expected -ne 0 ]; then
+    if [ "$expected" -ne 0 ]; then
         # Should never happen, but who knows
         echo "${LINE_PREFIX} Did not pack expected number of font files! Likely same font names for different paths."
         exit 1
