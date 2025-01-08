@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.17.0"
+script_version = "4.18.0"
 
 version = "3.3.0"
 projectName = "Nerd Fonts"
@@ -1266,6 +1266,14 @@ class font_patcher:
             logger.debug("Metrics is strange")
             pass # Will fail the metrics check some line later
 
+        if self.args.cellopt:
+            logger.debug("Overriding cell Y{%d:%d} with Y{%d:%d}",
+                self.font_dim['ymin'], self.font_dim['ymax'],
+                self.args.cellopt[2], self.args.cellopt[3])
+            self.font_dim['ymin'] = self.args.cellopt[2]
+            self.font_dim['ymax'] = self.args.cellopt[3]
+            our_btb = self.args.cellopt[3] - self.args.cellopt[2]
+
         # Calculate font height
         self.font_dim['height'] = -self.font_dim['ymin'] + self.font_dim['ymax']
         if self.font_dim['height'] == 0:
@@ -1288,7 +1296,7 @@ class font_patcher:
             sys.exit(1)
 
         self.font_dim['iconheight'] = self.font_dim['height']
-        if self.args.single and self.sourceFont.capHeight > 0:
+        if self.args.single and self.sourceFont.capHeight > 0 and not isinstance(self.args.cellopt, list):
             # Limit the icon height on monospaced fonts because very slender and tall icons render
             # excessivly tall otherwise. We ignore that effect for the other variants because it
             # does not look so much out of place there.
@@ -1348,9 +1356,21 @@ class font_patcher:
         if self.font_dim['width'] <= 0:
             logger.critical("Can not detect sane font width")
             sys.exit(1)
+        if isinstance(self.args.cellopt, list):
+            logger.debug("Overriding cell X{%d:%d} with X{%d:%d}",
+                self.font_dim['xmin'], self.font_dim['xmin'] + self.font_dim['width'],
+                self.args.cellopt[0], self.args.cellopt[1])
+            self.font_dim['xmin'] = self.args.cellopt[0]
+            self.font_dim['xmax'] = self.args.cellopt[1]
+            self.font_dim['width'] = self.args.cellopt[1]
         logger.debug("Final font cell dimensions %d w x %d h%s",
             self.font_dim['width'], self.font_dim['height'],
             ' (with icon cell {} h)'.format(int(self.font_dim['iconheight'])) if self.font_dim['iconheight'] != self.font_dim['height'] else '')
+        if self.args.cellopt:
+            logger.info("Cell coordinates %s%d:%d:%d:%d",
+                '' if not isinstance(self.args.cellopt, list) else 'overridden with ',
+                self.font_dim['xmin'], self.font_dim['width'],
+                self.font_dim['ymax'] - self.font_dim['height'], self.font_dim['ymax'])
 
         self.xavgwidth.append(self.args.xavgwidth)
         if isinstance(self.xavgwidth[-1], int) and self.xavgwidth[-1] == 0:
@@ -2030,6 +2050,7 @@ def setup_arguments():
     # <none>  - copy from sourcefont (default)
     # 0       - calculate from font according to OS/2-version-2
     # 500     - set to 500
+    expert_group.add_argument('--cell',                                    dest='cellopt',          default=None,  type=str,            help='Adjust or quiery the call size, e.g. use "0:1000:-200:800" resp "?"')
 
     # progress bar arguments - https://stackoverflow.com/questions/15008758/parsing-boolean-values-with-argparse
     progressbars_group_parser.add_argument('--progressbars',         dest='progressbars',     action='store_true',                help='Show percentage completion progress bars per Glyph Set (default)')
@@ -2095,6 +2116,23 @@ def setup_arguments():
     if args.nonmono and args.single:
         logger.warning("Specified contradicting --variable-width-glyphs together with --mono or --single-width-glyphs. Ignoring --variable-width-glyphs.")
         args.nonmono = False
+
+    if args.cellopt:
+        if args.cellopt != '?':
+            try:
+                parts = [ int(v) for v in args.cellopt.split(':') ]
+                if len(parts) != 4:
+                    raise
+            except:
+                logger.critical("Parameter for --cell is not 4 colon seprated integer numbers: '%s'", args.cellopt)
+                sys.exit(2)
+            if parts[0] >= parts[1] or parts[2] >= parts[3]:
+                logger.critical("Parameter for --cell do not result in positive cell size: %d x %d",
+                    parts[1] - parts[0], parts[3] - parts[2])
+                sys.exit(2)
+            if parts[0] != 0:
+                logger.warn("First parameter for --cell should be zero, this is probably not working")
+            args.cellopt = parts
 
     make_sure_path_exists(args.outputdir)
     if not os.path.isfile(args.font):
