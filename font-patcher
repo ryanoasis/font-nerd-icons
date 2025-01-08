@@ -2168,6 +2168,7 @@ def setup_arguments():
             logger.critical("Can not create single font files from True Type Collections")
             sys.exit(1)
 
+    # The if might look ridiculous, but isinstance(False, int) is True!
     if isinstance(args.xavgwidth, int) and not isinstance(args.xavgwidth, bool):
         if args.xavgwidth < 0:
             logger.critical("--xavgcharwidth takes no negative numbers")
