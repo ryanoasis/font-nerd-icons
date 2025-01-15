@@ -6,7 +6,7 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 # Change the script version when you edit this script:
-script_version = "4.18.0"
+script_version = "4.18.1"
 
 version = "3.3.0"
 projectName = "Nerd Fonts"
@@ -1845,6 +1845,7 @@ def sanitize_filename(filename, allow_dirs = False):
     """ Enforces to not use forbidden characters in a filename/path. """
     if filename == '.' and not allow_dirs:
         return '_'
+    restore_colon = sys.platform == 'win32' and re.match('[a-z]:', filename, re.I)
     trans = filename.maketrans('<>:"|?*', '_______')
     for i in range(0x00, 0x20):
         trans[i] = ord('_')
@@ -1853,7 +1854,10 @@ def sanitize_filename(filename, allow_dirs = False):
         trans[ord('\\')] = ord('_')
     else:
         trans[ord('\\')] = ord('/') # We use Posix paths
-    return filename.translate(trans)
+    new_filename = filename.translate(trans)
+    if restore_colon:
+        new_filename = new_filename[ :1] + ':' + new_filename[2: ]
+    return new_filename
 
 def get_multiglyph_boundingBox(glyphs, destGlyph = None):
     """ Returns dict of the dimensions of multiple glyphs combined(, as if they are copied into destGlyph) """
