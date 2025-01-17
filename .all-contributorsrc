@@ -1851,6 +1851,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "saumyajyoti",
+      "name": "Saumyajyoti Mukherjee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27477973?v=4",
+      "profile": "https://github.com/saumyajyoti",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
