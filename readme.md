@@ -223,10 +223,10 @@ curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBra
 
 > Best option if on **macOS** and want to use **Homebrew**.
 
-All fonts are available via [Homebrew Cask](https://github.com/Homebrew/homebrew-cask) on macOS (OS X)
+All fonts are available via [Homebrew Cask](https://formulae.brew.sh/cask-font/) on macOS (OS X)
 
 ```sh
-brew install font-hack-nerd-font
+brew install --cask font-ubuntu-nerd-font
 ```
 
 ### `Option 3: Unofficial Chocolatey or Scoop Repositories`
