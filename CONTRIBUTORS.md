@@ -271,6 +271,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/skoch13"><img src="https://avatars.githubusercontent.com/u/29177689?v=4?s=100" width="100px;" alt="Sergey Kochetkov"/><br /><sub><b>Sergey Kochetkov</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=skoch13" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/saumyajyoti"><img src="https://avatars.githubusercontent.com/u/27477973?v=4?s=100" width="100px;" alt="Saumyajyoti Mukherjee"/><br /><sub><b>Saumyajyoti Mukherjee</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Asaumyajyoti" title="Bug reports">🐛</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/pablogrs"><img src="https://avatars.githubusercontent.com/u/8503019?v=4?s=100" width="100px;" alt="Pablo Sanchez"/><br /><sub><b>Pablo Sanchez</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=pablogrs" title="Documentation">📖</a></td>
+    </tr>
   </tbody>
 </table>
 
