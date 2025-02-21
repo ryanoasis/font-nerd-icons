@@ -273,6 +273,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/pablogrs"><img src="https://avatars.githubusercontent.com/u/8503019?v=4?s=100" width="100px;" alt="Pablo Sanchez"/><br /><sub><b>Pablo Sanchez</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=pablogrs" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://joshstein.io"><img src="https://avatars.githubusercontent.com/u/27491286?v=4?s=100" width="100px;" alt="Josh Stein"/><br /><sub><b>Josh Stein</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=joshestein" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
