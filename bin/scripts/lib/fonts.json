@@ -597,7 +597,7 @@
       "imagePreviewFontSource": "JetBrainsMapleMono/JetBrainsMapleMono-Regular.ttf",
       "linkPreviewFont": "jetbrains-maple-mono",
       "caskName": "jetbrains-maple-mono",
-      "repoRelease": true,
+      "repoRelease": false,
       "isMonospaced": true,
       "description": "The free and open-source font fused with JetBrains Mono & Maple Mono"
     },
