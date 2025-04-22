@@ -1878,6 +1878,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "duytrung",
+      "name": "Trung Nguyen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2046672?v=4",
+      "profile": "https://github.com/duytrung",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
