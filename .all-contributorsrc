@@ -1914,6 +1914,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "peppapig450",
+      "name": "Nick",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55930078?v=4",
+      "profile": "http://nickbrady.dev",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "repoType": "github",
