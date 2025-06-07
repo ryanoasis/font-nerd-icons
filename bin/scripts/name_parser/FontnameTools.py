@@ -67,6 +67,8 @@ class FontnameTools:
             'book':         '',
             'ce':           'CE',
             'normal':       'Regular',
+            'powerline':    'Powerline',
+            'forpowerline': 'ForPowerline',
         }
         return known_names.get(style_name.lower(), style_name)
 
@@ -421,7 +423,7 @@ class FontnameTools:
         weights = [ w for w in weights if w not in FontnameTools.known_styles ]
         # Some font specialities:
         other = [
-            '-', 'Book', 'For', 'Powerline',
+            '-', 'Book', r'(?:for[- ])?powerline',
             'IIx',              # Profont IIx
             'LGC',              # Inconsolata LGC
             r'\bCE\b',          # ProggycleanTT CE
