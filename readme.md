@@ -176,7 +176,7 @@ A preview of all fonts can be found [here](https://www.nerdfonts.com/font-downlo
 | [RecMono Nerd Font][p-recursive]                  | [Recursive Mono][f-recursive]          | 1.085      | NO   |
 | [RobotoMono Nerd Font][p-roboto]                  | [Roboto Mono][f-roboto]                | 3.0        | NO   |
 | [SauceCodePro Nerd Font][p-source-code-pro]       | [Source Code Pro][f-source]            | 2.042      | YES  |
-| [ServerMono Nerd Font][p-server-mono]             | [Server Mono][f-server-mono]           | 0.0.8      | NO   |
+| [ServerMono Nerd Font][p-server-mono]             | [Server Mono][f-server-mono]           | 1.200      | NO   |
 | [ShureTechMono Nerd Font][p-share-tech-mono]      | [Share Tech Mono][f-share]             | 1.003      | YES  |
 | [SpaceMono Nerd Font][p-space-mono]               | [Space Mono][f-space]                  | 1.001      | NO   |
 | [Terminess Nerd Font][p-terminus]                 | [Terminus TTF][f-terminus]             | 4.49.3     | YES  |
