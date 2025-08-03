@@ -284,6 +284,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/subframe7536"><img src="https://avatars.githubusercontent.com/u/78338239?v=4?s=100" width="100px;" alt="Song"/><br /><sub><b>Song</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Asubframe7536" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/oktoling"><img src="https://avatars.githubusercontent.com/u/161823820?v=4?s=100" width="100px;" alt="an octoling"/><br /><sub><b>an octoling</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Aoktoling" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/mietzen"><img src="https://avatars.githubusercontent.com/u/31704359?v=4?s=100" width="100px;" alt="Nils"/><br /><sub><b>Nils</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Amietzen" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/joeriddles"><img src="https://avatars.githubusercontent.com/u/19392916?v=4?s=100" width="100px;" alt="Joe Riddle"/><br /><sub><b>Joe Riddle</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=joeriddles" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
