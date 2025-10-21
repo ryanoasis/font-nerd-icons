@@ -286,6 +286,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/mietzen"><img src="https://avatars.githubusercontent.com/u/31704359?v=4?s=100" width="100px;" alt="Nils"/><br /><sub><b>Nils</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3Amietzen" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/injust"><img src="https://avatars.githubusercontent.com/u/3387175?v=4?s=100" width="100px;" alt="Justin Su"/><br /><sub><b>Justin Su</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/commits?author=injust" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ZhiZe-ZG"><img src="https://avatars.githubusercontent.com/u/75554862?v=4?s=100" width="100px;" alt="ZhiZe-ZG"/><br /><sub><b>ZhiZe-ZG</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AZhiZe-ZG" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Jhanvi-code23"> <img src="https://avatars.githubusercontent.com/u/218037056?s=400&u=e48360f01b550d5b66e10a447fb4f89a7df52240&v=4" width="100px;" alt="Jhanvi-code23"/><br /><sub><b>Jhanvi-code23</b></sub></a><br /><a href="https://github.com/ryanoasis/nerd-fonts/issues?q=author%3AJhanvi-code23" title="Contributions">🐛</a></td>
+
     </tr>
   </tbody>
 </table>
